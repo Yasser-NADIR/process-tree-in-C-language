@@ -15,16 +15,18 @@ int main(int argc, char ** argv){
     root = addNodeToRight(root, right);
 
 
-    printf("affichage prefixe Recursif\n");
-    affichagePrefixeRecursif(root);
-    // printf("affichage infixe\n");
-    // affichageInfixeRecursive(root);
+    // printf("affichage prefixe Recursif\n");
+    // affichagePrefixeRecursif(root);
+    printf("affichage infixe Recursif\n");
+    affichageInfixeRecursif(root);
     // printf("affichage postfixe\n");
     // affichagePostfixeRecursive(root);
 
 
-    printf("affichage prefixe Iteratif\n");
-    affichagePrefixeIteratif(root);
+    // printf("affichage prefixe Iteratif\n");
+    // affichagePrefixeIteratif(root);
+    printf("affichage infixe Iteratif\n");
+    affichageInfixeIteratif(root);
     
     return 0;
 }

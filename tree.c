@@ -67,3 +67,28 @@ void affichagePrefixeIteratif(Tree *tree){
         };
     }
 }
+
+void affichageInfixeIteratif(Tree *tree){
+    Tree *node = tree;
+    Tree *pile[100];
+    int index = -1;
+
+    while(node!=NULL){
+        while(node!=NULL){
+            index ++;
+            pile[index] = node;
+
+            node = node->left;
+        }
+
+        while(index>-1 && (node==NULL || node->right==NULL)){
+            node = pile[index];
+            index --;
+            
+            printf("%d\n", node->data);
+        }
+
+        node = node->right;
+    }
+    
+}
